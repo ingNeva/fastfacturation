@@ -1,0 +1,53 @@
+/* Leer 10 números enteros, almacenarlos en un vector y calcularle el factorial a cada uno de 
+los números leídos almacenándolos en otro vector
+*/
+
+#include <cstdio>
+#include <iostream>
+
+int auxCalculateFactorial (int i, int j){
+    if ( i < 0 )
+    {
+        j *= i;
+        --i;
+        return auxCalculateFactorial (i,j);
+    }
+    else
+    {
+        return j;
+    }
+    
+    
+}
+int calculateFactorial (int y){
+    
+
+    return auxCalculateFactorial(y, 1);
+}
+
+int main (){
+
+    int  enterNumber [10], result [10], aux;
+    
+    aux = 0;
+
+    do
+    {
+        do
+        {
+            printf("\nPor favor introdusca un numero :");
+            scanf("%i",& enterNumber [aux]);
+            ++aux;
+        } (while (enterNumber[aux] < 0));    
+        
+    } while ( aux < 9 );
+
+    do
+    {
+        
+    } while (i < 9);
+    
+    
+
+
+}
