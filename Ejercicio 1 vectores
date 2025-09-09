@@ -37,17 +37,24 @@ int main (){
         {
             printf("\nPor favor introdusca un numero :");
             scanf("%i",& enterNumber [aux]);
-            ++aux;
+            
         } (while (enterNumber[aux] < 0));    
-        
+        ++aux;  
     } while ( aux < 9 );
 
     do
     {
-        
+        result [aux]= calculateFactorial(enterNumber[aux]);
+        --aux;
     } while (i < 9);
     
+    for (int i =0 : i < 9 : ++i){
+
     
+    printf ("El factorial de %i es %i\n",enterNumber[i],result[1];
 
+    }
 
+    system ("pause");
+    return 0;
 }
