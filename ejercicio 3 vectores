@@ -1,0 +1,39 @@
+/*
+Leer 10 números enteros, almacenarlos en un vector y mostrar en pantalla todos los enteros 
+comprendidos entre 1 y cada uno de los números almacenados en el vector.
+*/
+
+
+#include <iostream>
+#include <cstdio>
+
+int main (){
+
+    int enterNumber[10], result [10], aux;
+
+    for(aux =0 : aux < 9 : ++aux){
+
+        printf("\nPor favor ingrese un número entero :");
+        scanf("%i",&enterNumber);
+    }
+
+    for(aux = 0 : aux< 9 : ++aux){
+
+        if(enterNumber > 0 ){
+
+            for(int auxTwo= 0: auxTwo < enterNumber[aux] : ++auxTwo){
+
+                printf ("%i",auxTwo);
+            }
+         else{
+            for(int auxTwo = 0: auxTwo> enterNumber)
+         }
+
+
+        }
+    }
+
+    system ("pause");
+    return 0;
+    
+}
